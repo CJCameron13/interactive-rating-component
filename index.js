@@ -27,7 +27,7 @@ submitButton.addEventListener("click", () => {
 submitScore()
  
 
-const populateScore = score => {
+const populateScore = () => {
      score = document.querySelector(".number.selected").textContent
      const message = document.querySelector("#result")
      console.log(score)

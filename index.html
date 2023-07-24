@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="/interactive-rating-component-main/styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <!-- Rating state start -->
+<div id="primary-container">
+  <div id="rating-state-container">
+    <div id="star-background">
+      <img id="star" src="/interactive-rating-component-main/images/icon-star.svg">
+    </div>
+    <h1 id="rating-header">How did we do?</h1>
+
+    <p id="rating-subtext">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+
+    <div id="number-line">
+      <div class="number">1</div>
+      <div class="number">2</div>
+      <div class="number">3</div>
+      <div class="number">4</div>
+      <div class="number selected">5</div>
+    </div>
+
+    <button id="submit">Submit</button>
+  </div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div id="ty-container" class="hidden">
+    <img id="ty-image" src="/interactive-rating-component-main/images/illustration-thank-you.svg">
+    <div id="result">You selected <!-- Add rating here --> out of 5</div>
+    <h1 id="ty-header">Thank you!</h1>
+    <p id="ty-subtext">
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </p>
+  </div>
+</div>
+  <!-- Thank you state end -->
+
+<script src="/interactive-rating-component-main/index.js"></script>
+
+</body>
+</html>

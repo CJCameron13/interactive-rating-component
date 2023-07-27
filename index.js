@@ -1,5 +1,6 @@
 const selectRating = () => {
     const number = document.querySelectorAll(".number");
+    const selectedNumber = document.querySelector(".number.selected")
 
     number.forEach((number) => {
         number.addEventListener("click", event => {
@@ -21,17 +22,15 @@ submitButton.addEventListener("click", () => {
     console.log('submitted')
     ratingBox.classList.add("hidden")
     tyBox.classList.remove("hidden")
+    const populateScore = () => {
+        score = document.querySelector(".number.selected").textContent
+        const message = document.querySelector("#result")
+        console.log(score)
+        return message.textContent = `You selected ${score} out of 5`
+   }
+   populateScore()
 })
 }
 
 submitScore()
  
-
-const populateScore = () => {
-     score = document.querySelector(".number.selected").textContent
-     const message = document.querySelector("#result")
-     console.log(score)
-     return message.textContent = `You selected ${score} out of 5`
-}
-
-populateScore()

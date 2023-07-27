@@ -139,3 +139,27 @@ body {
     margin-top: 20px;
     width: 80%;
 }
+
+@media screen and (max-width: 475px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #primary-container {
+        width: 206px;
+        height: 416px;
+    }
+
+    #star-background {
+        margin-bottom: 20px;
+    }
+
+    .number {
+        height: 35px;
+        width: 35px;
+    }
+
+    #submit {
+        height: 40px;
+    }
+}
